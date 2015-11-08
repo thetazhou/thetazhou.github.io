@@ -88,7 +88,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://thetazhou.github.io/20151108/我的remote开发工具箱/" data-id="cigqo73md0001coy45x0penq2" class="article-share-link">Share</a>
+      <a data-url="http://thetazhou.github.io/20151108/我的remote开发工具箱/" data-id="cigqob0pa0001eky4jebc0kaf" class="article-share-link">Share</a>
       
       
     </footer>
@@ -125,7 +125,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://thetazhou.github.io/20151005/又又又/" data-id="cigqo73mm0003coy42y80u90a" class="article-share-link">Share</a>
+      <a data-url="http://thetazhou.github.io/20151005/又又又/" data-id="cigqob0pg0003eky48zqaox3p" class="article-share-link">Share</a>
       
       
     </footer>
@@ -169,7 +169,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://thetazhou.github.io/20090822/《编程那些事儿》，《学习的艺术》读后泛谈/" data-id="cigqo73le0000coy485ybhf0v" class="article-share-link">Share</a>
+      <a data-url="http://thetazhou.github.io/20090822/《编程那些事儿》，《学习的艺术》读后泛谈/" data-id="cigqob0om0000eky4ao0dfs94" class="article-share-link">Share</a>
       
       
     </footer>
@@ -202,19 +202,21 @@
     <div class="article-entry" itemprop="articleBody">
       
         <pre><code><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"fdsafd"</span> <span class="attribute">target</span>=<span class="value">"_blank"</span> <span class="attribute">class</span>=<span class="value">"t"</span> &gt;</span>fjdafdak<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-</code></pre><p><a href="xxfdsafd" title="abcde" target="_blank" class="t">fjaddk</a><br><a href="yyfdsafd" target="_blank" class="t">fjafdk</a><br><a href="zzfdsafd" target="_blank" class="t">fjaddddk</a></p>
-<p>朋友需要提取形如以上内容中的url和title，且取title时须判断<a>标签中是否存在title属性，如果存在，则匹配title属性的值，否则匹配<a></a>之间的值作为title。</a></p>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"xxfdsafd"</span> <span class="attribute">title</span>=<span class="value">"abcde"</span> <span class="attribute">target</span>=<span class="value">"_blank"</span> <span class="attribute">class</span>=<span class="value">"t"</span> &gt;</span>fjaddk<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"yyfdsafd"</span> <span class="attribute">target</span>=<span class="value">"_blank"</span> <span class="attribute">class</span>=<span class="value">"t"</span> &gt;</span>fjafdk<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"zzfdsafd"</span> <span class="attribute">target</span>=<span class="value">"_blank"</span> <span class="attribute">class</span>=<span class="value">"t"</span> &gt;</span>fjaddddk<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+</code></pre><p>朋友需要提取形如以上内容中的url和title，且取title时须判断&lt;a&gt;标签中是否存在title属性，如果存在，则匹配title属性的值，否则匹配&lt;a&gt;&lt;/a&gt;之间的值作为title。</p>
 <p>通过三目运算，可以很方便解决上面的需求。</p>
 <p> 三目表达式  (?(expression)yes|no)</p>
 <p>说明：如果expression被搜索到就执行yes部分,否则就执行no部分。</p>
 <p>编写正则如下：</p>
-<p><a href="(?<url>[^" ]*?)"="" (?(title="[^" ]*?"[^<="">]<em>&gt;[\s\S]</em>?)title=”(?<title>[^”]<em>?)”[^&lt;&gt;]</em>&gt;[\s\S]<em>?|[^&lt;&gt;]</em>&gt;(?<title>[\s\S]<em>?))&lt;/[^&lt;&gt;]</em>&gt;</title></title></a></p>
-<p>经过正则表达式测试工具测试，提取成功。</p>
+<pre><code><span class="variable">&lt;a href="(?&lt;url&gt;</span>[^<span class="string">"]*?)"</span> (?(title=<span class="string">"[^"</span>]<span class="keyword">*</span>?<span class="string">"[^&lt;&gt;]*&gt;[\s\S]*?)title="</span>(?<span class="variable">&lt;title&gt;</span>[^<span class="string">"]*?)"</span>[^<span class="variable">&lt;&gt;</span>]<span class="keyword">*</span>&gt;[\s\S]<span class="keyword">*</span>?|<span class="string">[^&lt;&gt;]*&gt;(?&lt;title&gt;[\s\S]*?))&lt;/[^&lt;&gt;]*&gt;</span>
+</code></pre><p>经过正则表达式测试工具测试，提取成功。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://thetazhou.github.io/20081021/在正则中进行判断（三目运算）/" data-id="cigqo73mk0002coy4ij6hp6es" class="article-share-link">Share</a>
+      <a data-url="http://thetazhou.github.io/20081021/在正则中进行判断（三目运算）/" data-id="cigqob0pd0002eky4546c5qgr" class="article-share-link">Share</a>
       
       
     </footer>
