@@ -88,7 +88,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://thetazhou.github.io/20151108/我的remote开发工具箱/" data-id="cigqnu3kx0001qsy401uguu64" class="article-share-link">Share</a>
+      <a data-url="http://thetazhou.github.io/20151108/我的remote开发工具箱/" data-id="cigqo73md0001coy45x0penq2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -125,7 +125,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://thetazhou.github.io/20151005/又又又/" data-id="cigqnu3l30002qsy4gkuhidsx" class="article-share-link">Share</a>
+      <a data-url="http://thetazhou.github.io/20151005/又又又/" data-id="cigqo73mm0003coy42y80u90a" class="article-share-link">Share</a>
       
       
     </footer>
@@ -169,7 +169,52 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://thetazhou.github.io/20090822/《编程那些事儿》，《学习的艺术》读后泛谈/" data-id="cigqnu3k50000qsy4zdv6zfq4" class="article-share-link">Share</a>
+      <a data-url="http://thetazhou.github.io/20090822/《编程那些事儿》，《学习的艺术》读后泛谈/" data-id="cigqo73le0000coy485ybhf0v" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-在正则中进行判断（三目运算）" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/20081021/在正则中进行判断（三目运算）/" class="article-date">
+  <time datetime="2008-10-21T06:36:00.000Z" itemprop="datePublished">2008-10-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/20081021/在正则中进行判断（三目运算）/">在正则中进行判断（三目运算）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"fdsafd"</span> <span class="attribute">target</span>=<span class="value">"_blank"</span> <span class="attribute">class</span>=<span class="value">"t"</span> &gt;</span>fjdafdak<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+</code></pre><p><a href="xxfdsafd" title="abcde" target="_blank" class="t">fjaddk</a><br><a href="yyfdsafd" target="_blank" class="t">fjafdk</a><br><a href="zzfdsafd" target="_blank" class="t">fjaddddk</a></p>
+<p>朋友需要提取形如以上内容中的url和title，且取title时须判断<a>标签中是否存在title属性，如果存在，则匹配title属性的值，否则匹配<a></a>之间的值作为title。</a></p>
+<p>通过三目运算，可以很方便解决上面的需求。</p>
+<p> 三目表达式  (?(expression)yes|no)</p>
+<p>说明：如果expression被搜索到就执行yes部分,否则就执行no部分。</p>
+<p>编写正则如下：</p>
+<p><a href="(?<url>[^" ]*?)"="" (?(title="[^" ]*?"[^<="">]<em>&gt;[\s\S]</em>?)title=”(?<title>[^”]<em>?)”[^&lt;&gt;]</em>&gt;[\s\S]<em>?|[^&lt;&gt;]</em>&gt;(?<title>[\s\S]<em>?))&lt;/[^&lt;&gt;]</em>&gt;</title></title></a></p>
+<p>经过正则表达式测试工具测试，提取成功。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://thetazhou.github.io/20081021/在正则中进行判断（三目运算）/" data-id="cigqo73mk0002coy4ij6hp6es" class="article-share-link">Share</a>
       
       
     </footer>
@@ -194,7 +239,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/08/">August 2009</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/08/">August 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/10/">October 2008</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -215,6 +260,10 @@
         
           <li>
             <a href="/20090822/《编程那些事儿》，《学习的艺术》读后泛谈/">《编程那些事儿》，《学习的艺术》读后泛谈</a>
+          </li>
+        
+          <li>
+            <a href="/20081021/在正则中进行判断（三目运算）/">在正则中进行判断（三目运算）</a>
           </li>
         
       </ul>
