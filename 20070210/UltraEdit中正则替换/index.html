@@ -5,16 +5,19 @@
   
   <title>UltraEdit中正则替换 | thetaZhou&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="网上已经有很多关于UltraEdit正则的文章了，但基本上都是UltraEdit的帮助文档的内容，对于如何进行用正则表达式进行批量替换并无详细说明。在开发中我们经常要进行某种规则的替换，这里就要用到UltraEdit强大的正则功能。　　UltraEdit支持两种风格的正则表达式，1.“UltraEdit风格正则表达式”，2.“UNIX 样式正则表达式”，默认为“UltraEdit风格正则表达式”，">
+  <meta name="description" content="网上已经有很多关于UltraEdit正则的文章了，但基本上都是UltraEdit的帮助文档的内容，对于如何进行用正则表达式进行批量替换并无详细说明。在开发中我们经常要进行某种规则的替换，这里就要用到UltraEdit强大的正则功能。
+UltraEdit支持两种风格的正则表达式，1.“UltraEdit风格正则表达式”。2.“UNIX 样式正则表达式”，默认为“UltraEdit风格正则表达式”。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="UltraEdit中正则替换">
 <meta property="og:url" content="http://thetazhou.github.io/20070210/UltraEdit中正则替换/index.html">
 <meta property="og:site_name" content="thetaZhou's Blog">
-<meta property="og:description" content="网上已经有很多关于UltraEdit正则的文章了，但基本上都是UltraEdit的帮助文档的内容，对于如何进行用正则表达式进行批量替换并无详细说明。在开发中我们经常要进行某种规则的替换，这里就要用到UltraEdit强大的正则功能。　　UltraEdit支持两种风格的正则表达式，1.“UltraEdit风格正则表达式”，2.“UNIX 样式正则表达式”，默认为“UltraEdit风格正则表达式”，">
-<meta property="og:updated_time" content="2015-11-08T15:58:55.501Z">
+<meta property="og:description" content="网上已经有很多关于UltraEdit正则的文章了，但基本上都是UltraEdit的帮助文档的内容，对于如何进行用正则表达式进行批量替换并无详细说明。在开发中我们经常要进行某种规则的替换，这里就要用到UltraEdit强大的正则功能。
+UltraEdit支持两种风格的正则表达式，1.“UltraEdit风格正则表达式”。2.“UNIX 样式正则表达式”，默认为“UltraEdit风格正则表达式”。">
+<meta property="og:updated_time" content="2015-11-08T16:09:03.748Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="UltraEdit中正则替换">
-<meta name="twitter:description" content="网上已经有很多关于UltraEdit正则的文章了，但基本上都是UltraEdit的帮助文档的内容，对于如何进行用正则表达式进行批量替换并无详细说明。在开发中我们经常要进行某种规则的替换，这里就要用到UltraEdit强大的正则功能。　　UltraEdit支持两种风格的正则表达式，1.“UltraEdit风格正则表达式”，2.“UNIX 样式正则表达式”，默认为“UltraEdit风格正则表达式”，">
+<meta name="twitter:description" content="网上已经有很多关于UltraEdit正则的文章了，但基本上都是UltraEdit的帮助文档的内容，对于如何进行用正则表达式进行批量替换并无详细说明。在开发中我们经常要进行某种规则的替换，这里就要用到UltraEdit强大的正则功能。
+UltraEdit支持两种风格的正则表达式，1.“UltraEdit风格正则表达式”。2.“UNIX 样式正则表达式”，默认为“UltraEdit风格正则表达式”。">
   
     <link rel="alternative" href="/atom.xml" title="thetaZhou&#39;s Blog" type="application/atom+xml">
   
@@ -82,14 +85,119 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>网上已经有很多关于UltraEdit正则的文章了，但基本上都是UltraEdit的帮助文档的内容，对于如何进行用正则表达式进行批量替换并无详细说明。在开发中我们经常要进行某种规则的替换，这里就要用到UltraEdit强大的正则功能。<br>　　UltraEdit支持两种风格的正则表达式，1.“UltraEdit风格正则表达式”，2.“UNIX 样式正则表达式”，默认为“UltraEdit风格正则表达式”，我们一般要用的是UNIX 样式正则表达式，所以需要在UltraEdit的“高级”菜单中选择“配置”，在“搜索”页中选择“UNIX 样式正则表达式”即可。</p>
+        <p>网上已经有很多关于UltraEdit正则的文章了，但基本上都是UltraEdit的帮助文档的内容，对于如何进行用正则表达式进行批量替换并无详细说明。在开发中我们经常要进行某种规则的替换，这里就要用到UltraEdit强大的正则功能。</p>
+<p>UltraEdit支持两种风格的正则表达式，<br>1.“UltraEdit风格正则表达式”。<br>2.“UNIX 样式正则表达式”，默认为“UltraEdit风格正则表达式”。</p>
+<p>我们一般要用的是UNIX 样式正则表达式，所以需要在UltraEdit的“高级”菜单中选择“配置”，在“搜索”页中选择“UNIX 样式正则表达式”即可。</p>
 <p>对于UNIX 样式正则表达式如何编写可以查看相关文档，在此列出帮助参考：</p>
 <p>表1.常用的特殊代码</p>
-<p>代码/语法    说明<br>| —–:  | ——–   |<br>|.    |匹配除换行符以外的任意字符<br>|/w    |匹配字母或数字<br>|/s    |匹配任意的空白符<br>|/d    |匹配数字<br>|/b    |匹配单词的开始或结束<br>|^    |匹配字符串的开始<br>|$    |匹配字符串的结束</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">代码/语法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">.</td>
+<td>匹配除换行符以外的任意字符</td>
+</tr>
+<tr>
+<td style="text-align:right">/w</td>
+<td>匹配字母或数字</td>
+</tr>
+<tr>
+<td style="text-align:right">/s</td>
+<td>匹配任意的空白符</td>
+</tr>
+<tr>
+<td style="text-align:right">/d</td>
+<td>匹配数字</td>
+</tr>
+<tr>
+<td style="text-align:right">/b</td>
+<td>匹配单词的开始或结束</td>
+</tr>
+<tr>
+<td style="text-align:right">^</td>
+<td>匹配字符串的开始</td>
+</tr>
+<tr>
+<td style="text-align:right">$</td>
+<td>匹配字符串的结束</td>
+</tr>
+</tbody>
+</table>
 <p>表2.常用的量词</p>
-<p>代码/语法    说明<br>| —–:  | ——–   |<br>|*    |重复零次或更多次<br>|+    |重复一次或更多次<br>|?    |重复零次或一次<br>|{n}    |重复n次<br>|{n,}    |重复n次或更多次<br>|{n,m}    |重复n到m次</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">代码/语法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">*</td>
+<td>重复零次或更多次</td>
+</tr>
+<tr>
+<td style="text-align:right">+</td>
+<td>重复一次或更多次</td>
+</tr>
+<tr>
+<td style="text-align:right">?</td>
+<td>重复零次或一次</td>
+</tr>
+<tr>
+<td style="text-align:right">{n}</td>
+<td>重复n次</td>
+</tr>
+<tr>
+<td style="text-align:right">{n,}</td>
+<td>重复n次或更多次</td>
+</tr>
+<tr>
+<td style="text-align:right">{n,m}</td>
+<td>重复n到m次</td>
+</tr>
+</tbody>
+</table>
 <p>表3.常用的反义代码</p>
-<p>代码/语法    说明<br>| —–:  | ——–   |<br>|/W    |匹配任意不是字母和数字的字符<br>|/S    |匹配任意不是空白符的字符<br>|/D    |匹配任意非数字的字符<br>|/B    |匹配不是单词开头或结束的位置<br>|[^x]    |匹配除了x以外的任意字符<br>|[^aeiou]    |匹配除了aeiou这几个字母以外的任意字符</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">代码/语法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">/W</td>
+<td>匹配任意不是字母和数字的字符</td>
+</tr>
+<tr>
+<td style="text-align:right">/S</td>
+<td>匹配任意不是空白符的字符</td>
+</tr>
+<tr>
+<td style="text-align:right">/D</td>
+<td>匹配任意非数字的字符</td>
+</tr>
+<tr>
+<td style="text-align:right">/B</td>
+<td>匹配不是单词开头或结束的位置</td>
+</tr>
+<tr>
+<td style="text-align:right">[^x]</td>
+<td>匹配除了x以外的任意字符</td>
+</tr>
+<tr>
+<td style="text-align:right">[^aeiou]</td>
+<td>匹配除了aeiou这几个字母以外的任意字符</td>
+</tr>
+</tbody>
+</table>
 <p>案例：某文件中有相当多”news1.xxx.com/1231,60983.html” 形式的链接，需要将该形式中的news1改为news2，其它形式的不去改变。</p>
 <p>替换方法：<br>在UltraEdit“搜索”菜单中选择“替换”，勾选上“正则表达式”，在“查找”输入框中输入news1.xxx.com/(/d+),(/d+).html </p>
 <p>在“替换”输入框中输入news2.xxx.com//1,/2.html </p>
@@ -98,7 +206,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://thetazhou.github.io/20070210/UltraEdit中正则替换/" data-id="cigqpgcey0000b4y4ai88ydmf" class="article-share-link">Share</a>
+      <a data-url="http://thetazhou.github.io/20070210/UltraEdit中正则替换/" data-id="cigqpti1c0000y0y4hgzmelta" class="article-share-link">Share</a>
       
       
     </footer>
