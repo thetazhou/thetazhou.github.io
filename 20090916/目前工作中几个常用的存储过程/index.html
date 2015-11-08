@@ -7,20 +7,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="目前工作中几个常用的存储过程
 以下几个存储过程以HolidayList表为基础
-创建节假日表    CREATE TABLE [dbo].[HolidayList] (        [HolidayId] [int] IDENTITY (1, 1) NOT NULL ,        [HolidayDate] [smalldatetime] NULL ,        [HolidayName">
+创建节假日表
+CREATE TABLE [dbo].[HolidayList] (
+    [HolidayId] [int] IDENTITY (1, 1) NOT NULL ,
+    [HolidayDate] [smalldatetime] NULL ,
+    [HolidayName] [varchar]">
 <meta property="og:type" content="article">
 <meta property="og:title" content="目前工作中几个常用的存储过程">
 <meta property="og:url" content="http://thetazhou.github.io/20090916/目前工作中几个常用的存储过程/index.html">
 <meta property="og:site_name" content="thetaZhou's Blog">
 <meta property="og:description" content="目前工作中几个常用的存储过程
 以下几个存储过程以HolidayList表为基础
-创建节假日表    CREATE TABLE [dbo].[HolidayList] (        [HolidayId] [int] IDENTITY (1, 1) NOT NULL ,        [HolidayDate] [smalldatetime] NULL ,        [HolidayName">
-<meta property="og:updated_time" content="2015-11-08T15:34:19.448Z">
+创建节假日表
+CREATE TABLE [dbo].[HolidayList] (
+    [HolidayId] [int] IDENTITY (1, 1) NOT NULL ,
+    [HolidayDate] [smalldatetime] NULL ,
+    [HolidayName] [varchar]">
+<meta property="og:updated_time" content="2015-11-08T15:36:52.734Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="目前工作中几个常用的存储过程">
 <meta name="twitter:description" content="目前工作中几个常用的存储过程
 以下几个存储过程以HolidayList表为基础
-创建节假日表    CREATE TABLE [dbo].[HolidayList] (        [HolidayId] [int] IDENTITY (1, 1) NOT NULL ,        [HolidayDate] [smalldatetime] NULL ,        [HolidayName">
+创建节假日表
+CREATE TABLE [dbo].[HolidayList] (
+    [HolidayId] [int] IDENTITY (1, 1) NOT NULL ,
+    [HolidayDate] [smalldatetime] NULL ,
+    [HolidayName] [varchar]">
   
     <link rel="alternative" href="/atom.xml" title="thetaZhou&#39;s Blog" type="application/atom+xml">
   
@@ -90,9 +102,23 @@
       
         <p>目前工作中几个常用的存储过程</p>
 <p>以下几个存储过程以HolidayList表为基础</p>
-<p>创建节假日表<br>    CREATE TABLE [dbo].[HolidayList] (<br>        [HolidayId] [int] IDENTITY (1, 1) NOT NULL ,<br>        [HolidayDate] [smalldatetime] NULL ,<br>        [HolidayName] [varchar] (16) COLLATE Chinese_PRC_CI_AS NULL<br>    ) ON [PRIMARY]</p>
-<p>插入节假日数据<br>    insert HolidayList<br>    select ‘2009-10-1’,’国庆节’ union<br>    select ‘2009-10-2’,’国庆节’ union<br>    select ‘2009-10-3’,’国庆节’ union<br>    select ‘2009-10-4’,’国庆节’ union<br>    select ‘2009-10-5’,’国庆节’ union<br>    select ‘2009-10-6’,’国庆节’ union<br>    select ‘2009-10-7’,’国庆节’ union<br>    select ‘2009-10-8’,’中秋节’ </p>
-<p>判断当天是否有行情：</p>
+<p>创建节假日表</p>
+<pre><code><span class="operator"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> [dbo].[HolidayList] (
+    [HolidayId] [<span class="built_in">int</span>] <span class="keyword">IDENTITY</span> (<span class="number">1</span>, <span class="number">1</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> ,
+    [HolidayDate] [smalldatetime] <span class="literal">NULL</span> ,
+    [HolidayName] [<span class="built_in">varchar</span>] (<span class="number">16</span>) <span class="keyword">COLLATE</span> Chinese_PRC_CI_AS <span class="literal">NULL</span> 
+) <span class="keyword">ON</span> [PRIMARY]</span>
+</code></pre><p>插入节假日数据</p>
+<pre><code>insert <span class="constant">HolidayList</span>
+select <span class="string">'2009-10-1'</span>,<span class="string">'国庆节'</span> <span class="class"><span class="keyword">union</span> </span>
+select <span class="string">'2009-10-2'</span>,<span class="string">'国庆节'</span> <span class="class"><span class="keyword">union</span> </span>
+select <span class="string">'2009-10-3'</span>,<span class="string">'国庆节'</span> <span class="class"><span class="keyword">union</span> </span>
+select <span class="string">'2009-10-4'</span>,<span class="string">'国庆节'</span> <span class="class"><span class="keyword">union</span> </span>
+select <span class="string">'2009-10-5'</span>,<span class="string">'国庆节'</span> <span class="class"><span class="keyword">union</span> </span>
+select <span class="string">'2009-10-6'</span>,<span class="string">'国庆节'</span> <span class="class"><span class="keyword">union</span> </span>
+select <span class="string">'2009-10-7'</span>,<span class="string">'国庆节'</span> <span class="class"><span class="keyword">union</span> </span>
+select <span class="string">'2009-10-8'</span>,<span class="string">'中秋节'</span> 
+</code></pre><p>判断当天是否有行情：</p>
 <pre><code><span class="operator"><span class="keyword">CREATE</span> PROC dbo.IsQuoteDate
 @bQuoteDate <span class="built_in">bit</span> <span class="keyword">output</span>
 <span class="keyword">AS</span>  
@@ -157,7 +183,7 @@ print '<span class="literal">result</span> = '+ convert(varchar(<span class="num
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://thetazhou.github.io/20090916/目前工作中几个常用的存储过程/" data-id="cigqoksf70001gsy4zapx93cp" class="article-share-link">Share</a>
+      <a data-url="http://thetazhou.github.io/20090916/目前工作中几个常用的存储过程/" data-id="cigqoo24m000164y4qky234kq" class="article-share-link">Share</a>
       
       
     </footer>
