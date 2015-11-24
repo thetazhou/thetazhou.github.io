@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>免费快递接口调用 | thetaZhou&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="在电商系统中，查看某个订单的详细信息，展示订单的物流跟踪记录已是标配。
+以下是通过jQuery调用快递100的url获取结果，达到查询订单跟踪的目的。
+var com = &quot;yuantong&quot;; //快递公司名，如圆通为yuantong, 京东为jd
+var orderNO = &quot;880589222679907360&quot;;  //订单号
+//获取快递信息
+$.ajax({
+    url: &quot;htt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="免费快递接口调用">
+<meta property="og:url" content="http://thetazhou.github.io/20151124/免费快递接口调用/index.html">
+<meta property="og:site_name" content="thetaZhou's Blog">
+<meta property="og:description" content="在电商系统中，查看某个订单的详细信息，展示订单的物流跟踪记录已是标配。
+以下是通过jQuery调用快递100的url获取结果，达到查询订单跟踪的目的。
+var com = &quot;yuantong&quot;; //快递公司名，如圆通为yuantong, 京东为jd
+var orderNO = &quot;880589222679907360&quot;;  //订单号
+//获取快递信息
+$.ajax({
+    url: &quot;htt">
+<meta property="og:updated_time" content="2015-11-24T07:16:45.113Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="免费快递接口调用">
+<meta name="twitter:description" content="在电商系统中，查看某个订单的详细信息，展示订单的物流跟踪记录已是标配。
+以下是通过jQuery调用快递100的url获取结果，达到查询订单跟踪的目的。
+var com = &quot;yuantong&quot;; //快递公司名，如圆通为yuantong, 京东为jd
+var orderNO = &quot;880589222679907360&quot;;  //订单号
+//获取快递信息
+$.ajax({
+    url: &quot;htt">
+  
+    <link rel="alternative" href="/atom.xml" title="thetaZhou&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">thetaZhou&#39;s Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://thetazhou.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-免费快递接口调用" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/20151124/免费快递接口调用/" class="article-date">
+  <time datetime="2015-11-24T07:06:33.000Z" itemprop="datePublished">2015-11-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      免费快递接口调用
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在电商系统中，查看某个订单的详细信息，展示订单的物流跟踪记录已是标配。</p>
+<p>以下是通过jQuery调用快递100的url获取结果，达到查询订单跟踪的目的。</p>
+<pre><code><span class="keyword">var</span> com = <span class="string">"yuantong"</span>; //快递公司名，如圆通为yuantong, 京东为jd
+<span class="keyword">var</span> orderNO = <span class="string">"880589222679907360"</span>;  //订单号
+//获取快递信息
+$.ajax({
+    url: <span class="string">"http://www.kuaidi100.com/query?type="</span>+com+<span class="string">"&amp;postid="</span>+orderNO+<span class="string">"&amp;id=1&amp;valicode=&amp;temp="</span>+<span class="type">Math</span>.random(),
+    dataType: 'jsonp',
+
+    success: function (<span class="literal">result</span>) {
+        <span class="keyword">if</span>(<span class="literal">result</span>.message == <span class="string">"ok"</span>){
+
+            //展示内容，根据情况自行调整
+            <span class="keyword">var</span> strItem = <span class="string">""</span>;
+            <span class="keyword">var</span> today = new <span class="type">Array</span>('周日','周一','周二','周三','周四','周五','周六');  
+
+            <span class="keyword">for</span>(i = <span class="literal">result</span>.data.length-<span class="number">1</span>;i&gt;=<span class="number">0</span>;i--){
+                <span class="keyword">if</span>(i==<span class="number">0</span>){
+                    strItem += <span class="string">"&lt;li class=\"clearfix current\"&gt;"</span>;
+                }
+                <span class="keyword">else</span>{
+                    strItem += <span class="string">"&lt;li class=\"clearfix\"&gt;"</span>;
+                }
+                strItem += <span class="string">"&lt;span class=\"day\"&gt;"</span>+<span class="literal">result</span>.data[i].time.replace(/([\d-]+)[\s]+[\d:]+/g,'$<span class="number">1</span>')
+                    +today[new <span class="type">Date</span>(<span class="literal">result</span>.data[i].time.replace(/([\d]+)-([\d]+)-([\d]+)[\s]+[\d:]+/g,'$<span class="number">2</span>-$<span class="number">3</span>-$<span class="number">1</span>')).getDay()]+<span class="string">"&lt;/span&gt;"</span>;
+                strItem += <span class="string">"&lt;span class=\"tg time\"&gt;"</span>+<span class="literal">result</span>.data[i].time.replace(/[\d-]+[\s]+([\d:]+)/g,'$<span class="number">1</span>')+<span class="string">"&lt;/span&gt;"</span>;
+                strItem += <span class="string">"&lt;span class=\"tg things\"&gt;"</span>+<span class="literal">result</span>.data[i].context+<span class="string">"&lt;/span&gt;"</span>;
+            }
+            $(<span class="string">".ddzzl ul"</span>).append(strItem);
+            //展示内容，根据情况自行调整
+        }
+    },
+    error:function(){
+        alert(<span class="string">"error"</span>);
+    }
+
+});
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://thetazhou.github.io/20151124/免费快递接口调用/" data-id="cihd1v75o0006vcy4hsijrwps" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/20151117/铁门啊铁通铁锁链/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">铁门啊铁通铁锁链</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  
+    
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/09/">September 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/08/">August 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/10/">October 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/02/">February 2007</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/20151124/免费快递接口调用/">免费快递接口调用</a>
+          </li>
+        
+          <li>
+            <a href="/20151117/铁门啊铁通铁锁链/">铁门啊铁通铁锁链</a>
+          </li>
+        
+          <li>
+            <a href="/20151108/我的remote开发工具箱/">我的remote开发工具箱</a>
+          </li>
+        
+          <li>
+            <a href="/20151005/又又又/">又又又</a>
+          </li>
+        
+          <li>
+            <a href="/20150203/WPF语法高亮控件AvalonEdit/">WPF语法高亮控件AvalonEdit</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 thetaZhou<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
